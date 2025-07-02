@@ -1,0 +1,14 @@
+/Users/air/Desktop/project 2/bin/Debug/net8.0/project 2
+/Users/air/Desktop/project 2/bin/Debug/net8.0/project 2.deps.json
+/Users/air/Desktop/project 2/bin/Debug/net8.0/project 2.runtimeconfig.json
+/Users/air/Desktop/project 2/bin/Debug/net8.0/project 2.dll
+/Users/air/Desktop/project 2/bin/Debug/net8.0/project 2.pdb
+/Users/air/Desktop/project 2/obj/Debug/net8.0/project 2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/air/Desktop/project 2/obj/Debug/net8.0/project 2.AssemblyInfoInputs.cache
+/Users/air/Desktop/project 2/obj/Debug/net8.0/project 2.AssemblyInfo.cs
+/Users/air/Desktop/project 2/obj/Debug/net8.0/project 2.csproj.CoreCompileInputs.cache
+/Users/air/Desktop/project 2/obj/Debug/net8.0/project 2.dll
+/Users/air/Desktop/project 2/obj/Debug/net8.0/refint/project 2.dll
+/Users/air/Desktop/project 2/obj/Debug/net8.0/project 2.pdb
+/Users/air/Desktop/project 2/obj/Debug/net8.0/project 2.genruntimeconfig.cache
+/Users/air/Desktop/project 2/obj/Debug/net8.0/ref/project 2.dll
