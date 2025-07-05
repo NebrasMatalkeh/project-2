@@ -33,7 +33,7 @@ public class Order
              {
             summary.AppendLine($" {item.OrderedProduct.Name} x {item.Quantity} = ${item.GetItemTotalPrice()}");
          }
-             summary.AppendLine( $"{Items.Sum(item => item.GetItemTotalPrice())};");
+             summary.AppendLine( $" Total: ${Items.Sum(item => item.GetItemTotalPrice())};");
              return summary.ToString();
          }
     
