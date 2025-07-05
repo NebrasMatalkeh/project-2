@@ -40,15 +40,4 @@ public class ProductDataLoder : IDataLoder
 
         }
     }
-
-
-    public void SaveData(string filePath)
-    {
-        using (StreamWriter writer = new StreamWriter(filePath))
-
-            foreach (var product in Products)
-            {
-                writer.WriteLine($"{product.Id}:{product.Name}:{product.Price}:{product.StockQuantity}");
-            }
-    }
 }

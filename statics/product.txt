@@ -1,4 +1,4 @@
-1:Dell XPS Laptop:1499.99:10
+ 1:Dell XPS Laptop:1499.99:5
 2:Logitech MX Mouse:79.50:50
  3:Mechanical Keyboard:120.00:13
 4:4K UHD Monitor:450.75:15

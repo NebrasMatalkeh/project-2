@@ -23,19 +23,4 @@ public class CustomerDataLoder : IDataLoder
             Customers.Add(customer);
         }
     }
-    public void SaveData(string filePath)
-    {
-
-        using (StreamWriter writer = new StreamWriter(filePath))
-
-            foreach (var customer in Customers)
-            {
-                writer.WriteLine($"{customer.Id}:{customer.Name}");
-            }
-    }
 }
-
-    
-
-
-        

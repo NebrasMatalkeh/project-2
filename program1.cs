@@ -8,11 +8,11 @@ public class program1
     private static List<Product> products = new List<Product>();
     private static List<Customer> customers = new List<Customer>();
     private static Customer currentCustomer;
-    private static List<OrderItem> currentShoppingCart = new List<OrderItem>();
+ private static List<OrderItem> currentShoppingCart = new List<OrderItem>();
     public static ProductDataLoder productLoader = new ProductDataLoder();
     public static CustomerDataLoder customerLoader = new CustomerDataLoder();
-
-    public static void Main(string[] args)
+   
+       public static void Main(string[] args)
     {
 
 
@@ -132,18 +132,23 @@ public class program1
 
     private static void ViewOrderHistory()
     {
-        foreach (var item in currentShoppingCart)
-        {
-            Console.WriteLine($"{item.OrderedProduct.Name} x {item.Quantity} = ${item.GetItemTotalPrice()}");
-        }
-        Console.WriteLine($"Total: ${currentShoppingCart.Sum(item => item.GetItemTotalPrice())}");
+        var order = new Order { OrderId = new Random().Next(7, 50), OrderCustomer = currentCustomer }; 
+            foreach (var item in currentShoppingCart)
+            {
+              
+               order.AddItemToOrder(item.OrderedProduct, item.Quantity);
+              Console.WriteLine( order.GetOrderSummary());
+
+
+           }
+       
     }
 
 
     private static void Checkout()
     {
 
-        var order = new Order { OrderId = new Random().Next(7, 50), OrderCustomer = currentCustomer };
+        var order = new Order { OrderId = new Random().Next(7, 50), OrderCustomer = currentCustomer , OrderDate= DateTime.Now};
         foreach (var item in currentShoppingCart)
         {
             item.OrderedProduct.DecreaseStock(item.Quantity);
